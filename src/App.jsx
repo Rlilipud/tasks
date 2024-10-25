@@ -2,7 +2,7 @@ import { useState } from "react";
 import CountNumber from "./components/CountNumber";
 
 function App() {
-  let [counter, setCounter] = useState(0);
+  let [input, setInput] = useState(0);
 
   return (
     <div className="App">
@@ -14,9 +14,9 @@ function App() {
           alignItems: "center",
         }}
       >
-        <p style={{ padding: "0 24px" }}>{counter}</p>
+        <p style={{ padding: "0 24px" }}>{input}</p>
 
-        <CountNumber setCounter={setCounter} counter={counter} />
+        <CountNumber setInput={setInput} input={input} />
       </div>
     </div>
   );
